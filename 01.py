@@ -1,17 +1,16 @@
-class Car:
+class Student:
     def run(self):
-         print("车在跑")
-         print(f"我是run函数self的值是:{self}")
+        print("学生在睡觉")
 
-#c1.run()
-c1 = Car()
-print(f"对象:{c1}")
-print(f"对象:(c1)的地址是:{id(c1)}")
-c1.run()
+    def sleep(self):
+        print(f"{self.color}的学生在睡觉，年龄是{self.age}")    
+      
+stu = Student()
 
-#c2.run()
-c2 = Car()
-print(f"对象:{c2}")
-print(f"对象:(c2)的地址是:{id(c2)}")
-c2.run()
 
+stu.color = "red"
+stu.age = 18
+
+stu.sleep()
+
+   
